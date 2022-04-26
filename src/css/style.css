@@ -1,0 +1,183 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(218, 28%, 13%);
+
+
+    color: #FFF;
+    font-family: 'Public Sans', sans-serif;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .logo {
+    display: flex;
+    height: 3.2rem;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+
+}
+
+header .menu li {
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+
+header .menu li a {
+    color: #CCC;
+}
+
+header .menu li a:hover {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.container {
+    max-width: 1920px;
+    min-height: 375px;
+    margin: 0 auto;
+    
+    
+}
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../image/bg-curvy-desktop.svg) center bottom no-repeat;
+    background-color: hsl(217, 28%, 15%);
+    background-size: contain;
+    
+}
+
+.principal .texto-principal {
+    display: flex;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 50px;
+
+}
+
+.principal .texto-secundario {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 40px;
+
+}
+
+.principal .btn {
+    background-image: linear-gradient(rgb(56, 122, 122), aqua);
+    border-radius: 50px;
+    padding: 15px 75px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFF;
+    margin-top: 25px;
+    margin-bottom: 10%;
+}
+
+.principal .btn:hover {
+    background-image: linear-gradient(aqua, rgb(56, 122, 122));
+}
+
+/*  serviços */
+
+.servicos {
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.servicos img {
+    height: 80px;
+    flex-wrap: wrap;
+}
+
+.servicos a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.servicos p {
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.productive {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+
+.productive .img-left {
+    margin-left: 80px;
+}
+
+.productive .text-right h2 {
+    font-size: 4.5rem;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.productive .text-right p {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.productive .text-right a {
+    font-size: 1.2rem;
+    color: #62e0d9;
+    margin-left: 55px;
+    text-decoration: underline;
+}
+.productive .text-right img {
+    margin-left:5px;
+}
+
+/* .fa-solid.fa-circle-arrow-right {
+    color: #62e0d9;
+    padding: 5px;
+} */
+
+.productive .text-right a:hover {
+    color: #FFF;
+}
+
+.depoimentos {
+    display: flex;
+    
+}
