@@ -4,11 +4,10 @@ html {
 
 body {
     background-color: hsl(218, 28%, 13%);
-
-
     color: #FFF;
     font-family: 'Public Sans', sans-serif;
     flex-wrap: wrap;
+    /* max-width:1920px; */
 }
 
 header {
@@ -48,13 +47,14 @@ header .menu li a:hover {
 }
 
 /* Conteúdo principal */
+
 .container {
     max-width: 1920px;
+    /* já foi setado em 1440, fica quase, mas não é ainda */
     min-height: 375px;
     margin: 0 auto;
-    
-    
 }
+
 .principal {
     display: flex;
     flex-direction: column;
@@ -62,13 +62,13 @@ header .menu li a:hover {
     background: url(../image/bg-curvy-desktop.svg) center bottom no-repeat;
     background-color: hsl(217, 28%, 15%);
     background-size: contain;
-    
+
 }
 
 .principal .texto-principal {
     display: flex;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-top: 50px;
 
@@ -79,9 +79,9 @@ header .menu li a:hover {
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 13px;
+    font-size: 19px;
     margin: 40px;
-
+    font-weight: 400;
 }
 
 .principal .btn {
@@ -135,9 +135,10 @@ header .menu li a:hover {
 .productive {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 100px;
-    
+    column-gap: 50px;
+
 }
 
 .productive .img-left {
@@ -164,8 +165,9 @@ header .menu li a:hover {
     margin-left: 55px;
     text-decoration: underline;
 }
+
 .productive .text-right img {
-    margin-left:5px;
+    margin-left: 5px;
 }
 
 /* .fa-solid.fa-circle-arrow-right {
@@ -178,41 +180,64 @@ header .menu li a:hover {
 }
 
 /*  */
+.apresenta {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.aspas {
+    position: relative;
+    left: 56px;
+    bottom: 27px;
+    z-index: -1;
+}
+
 .depoimentos {
     display: flex;
-    
+    max-width: 1440px;
+    column-gap: 20px;
+    ;
 }
-.text-depoimento {
-    background-color:hsl(217, 28%, 15%);
+
+.box-depoimento {
+    background-color: hsl(217, 28%, 15%);
     flex-direction: column;
-    border:1px solid #000;
+    border-radius: 5px;
+    box-shadow: 10px 5px 15px rgb(31, 29, 29);
     display: flex;
-    margin:10px;
+    margin: 10px;
     justify-content: space-around;
-    
+
 }
 
-.text-depoimento p  {
-    font-size:1.4rem;
-    padding:2rem;
-   
-}
-.text-depoimento .img-depoimentos {
-    margin-left:20px;
-    
-    display:flex;
-    float:left;
+.box-depoimento p {
+    font-size: 1.4rem;
+    padding: 2rem;
+
 }
 
-.text-depoimento .img-depoimentos img {
-    border-radius:50%;
-    height:3rem;
-    margin-right:1rem;
+.box-depoimento .img-depoimentos {
+    margin-left: 20px;
+    display: flex;
+    float: left;
+
 }
 
-.text-depoimento .name {
-    font-size:8px;
-   line-height:2rem; 
-    
+/* .float::after{
+    content:"";
+    display:block;
+    clear:both;
+} */
+
+.box-depoimento .img-depoimentos img {
+    border-radius: 50%;
+    height: 3rem;
+    margin-right: 1rem;
 }
 
+.box-depoimento .name {
+    font-size: 8px;
+    line-height: 2rem;
+
+}
