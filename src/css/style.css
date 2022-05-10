@@ -3,15 +3,15 @@ html {
 }
 
 body {
-    background-color: hsl(218, 28%, 13%);
-    color: #FFF;
+    background-color: var(--main-dark);
+    color: var(--whith);
     font-family: 'Outfit', sans-serif;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 
 header {
-    background-color: hsl(217, 28%, 15%);
+    background-color: var(--primary-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +41,7 @@ header .menu li a {
 }
 
 header .menu li a:hover {
-    color: #FFF;
+    color: var(--whith);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -60,7 +60,7 @@ header .menu li a:hover {
     flex-direction: column;
     align-items: center;
     background: url(../image/bg-curvy-desktop.svg) center bottom no-repeat;
-    background-color: hsl(217, 28%, 15%);
+    background-color: var(--primary-dark);
     background-size: contain;
 }
 
@@ -84,24 +84,24 @@ header .menu li a:hover {
 }
 
 .principal .btn {
-    background-image: linear-gradient(rgb(56, 122, 122), aqua);
+    background-image: linear-gradient(hsl(176, 68%, 64%), aqua);
     border-radius: 50px;
     padding: 15px 75px;
     font-size: 15px;
     font-weight: 700;
-    color: #FFF;
+    color: var(--whith);
     margin-top: 25px;
     margin-bottom: 10%;
 }
 
 .principal .btn:hover {
-    background-image: linear-gradient(aqua, rgb(56, 122, 122));
+    background-image: linear-gradient(aqua, hsl(198, 60%, 50%));
 }
 
 /*  serviços */
 
 .servicos {
-    background-color: hsl(218, 28%, 13%);
+    background-color: var(--main-dark);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
@@ -137,7 +137,7 @@ header .menu li a:hover {
     justify-content: center;
     margin-top: 100px;
     column-gap: 50px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
 }
 
@@ -155,25 +155,25 @@ header .menu li a:hover {
 
 .productive .text-right a {
     font-size: 1.2rem;
-    color: #62e0d9;
+    color: var(--btn-primary);
     margin-left: 10px;
     text-decoration: underline;
     justify-items: center;
-    
+
 }
 
 .productive .text-right .arrow::after {
-    background: url(../image/icon-arrow.svg) no-repeat; 
-    content:"";
-    width:100%;
-    height:100%;
-    position:absolute;
-    margin-left:5px;
-    
+    background: url(../image/icon-arrow.svg) no-repeat;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: 5px;
+
 }
 
 .productive .text-right a:hover {
-    color: #FFF;
+    color: var(--whith);
 }
 
 /*  */
@@ -181,7 +181,7 @@ header .menu li a:hover {
     display: flex;
     justify-content: center;
     margin-top: 10rem;
-    
+
 }
 
 .aspas {
@@ -199,20 +199,20 @@ header .menu li a:hover {
 }
 
 .box-fundador {
-    background-color: hsl(217, 28%, 15%);
+    background-color: var(--primary-dark);
     flex-direction: column;
     border-radius: 5px;
-    box-shadow: 10px 5px 15px rgb(31, 29, 29);
+    box-shadow: 10px 5px 15px var(--shadow);
     display: flex;
     margin: 10px;
-    padding-bottom:30px;
+    padding-bottom: 30px;
     justify-content: space-around;
 }
 
 .box-fundador p {
     font-size: 1.4rem;
     padding: 2rem;
-    
+
 }
 
 .box-fundador .img-fundador {
@@ -237,48 +237,54 @@ header .menu li a:hover {
     border-radius: 5px;
     text-align: center;
     padding: 20px;
-    max-width:900px;
-    margin:0 auto;
-    background-color:hsl(217, 28%, 15%);
-    box-shadow: black 0.5em 0.5em 0.3em;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--primary-dark);
+    box-shadow: var(--shadow) 1em 1.5em 5em;
     position: relative;
-    top:120px;
-     
+    top: 120px;
+
 }
 
 .login-h2 {
-    font-size:25px;
-    font-weight:700;
-    margin-bottom:10px;
-    margin-top:20px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
-.login-p {
-    font-size:12px;
-    padding:20px;
-}
-.input-email {
-    width:50%;
-    height:40px;
-    border-radius:25px;
-    padding:10px;
-}
-.login-btn {
-    border-radius:25px;
-    padding:10px;
-    background-color:hsl(176, 68%, 64%);
-    color:hsl(0, 0%, 100%);
-    margin:20px;
 
+.login-p {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.input-email {
+    width: 50%;
+    height: 40px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.login-btn {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: var(--btn-primary);
+    color: var(--whith);
+    margin: 20px;
+}
+
+.login-btn:hover {
+    background-color: var(--btn-hover);
 }
 
 
 /* Footer */
 
 .rodape {
-    background-color: hsl(216, 53%, 9%);
+    background-color: var(--footer-dark);
     font-size: 15px;
     padding: 30px 50px;
-    
+
 }
 
 .rodape .logo {
@@ -318,19 +324,21 @@ header .menu li a:hover {
     text-align: center;
     justify-content: center;
 }
+
 .left li,
 .right li {
     margin: 20px;
 }
+
 .menu-rodape li:hover {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .redes a {
     margin: 20px;
     font-size: 30px;
 }
-.redes a:hover {
-    color:#62e0d9;
-}
 
+.redes a:hover {
+    color: var(--btn-hover);
+}
