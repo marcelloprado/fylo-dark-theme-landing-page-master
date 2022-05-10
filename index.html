@@ -16,8 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <title>Fylo</title>
 </head>
 
@@ -58,7 +59,7 @@
         <section class="servicos">
 
             <div class="img img-1">
-                <a href="#"><img src="src/image/icon-access-anywhere.svg"></a>
+                <a href=""><img src="src/image/icon-access-anywhere.svg"></a>
                 <h2>Access your files, anywhere</h2>
                 <p>The ability to use a smartphone, tablet,
                     or computer<br> to access your account means your files follow
@@ -105,8 +106,9 @@
                 <p>Securely share file and folders with friends, family and colleagues for live<br> collaboration. No
                     email
                     attachments required.</p>
-
-                <a href="#">See how Fylo works<img class="arrow" src="src/image/icon-arrow.svg"></a>
+                <div class="arrow">
+                    <a href="#">See how Fylo works</a>
+                </div>
             </div>
         </section>
 
@@ -173,7 +175,7 @@
         <p class="login-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit,ipsum dolor sit amet consectetur
             adipisicing elit,consectetur adipisicingipsum dolor</p>
         <form class="loginForm">
-            <input type="email" name="email" value="" placeholder="johnappleseed#mail.com" class="input-email" required>
+            <input type="email" name="email" title="Plese enter a valid email address" value="" placeholder="johnappleseed#mail.com" class="input-email" required>
             <button class="login-btn">Get Started For Free</button>
         </form>
     </section>
