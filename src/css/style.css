@@ -48,13 +48,6 @@ header .menu li a:hover {
 
 /* Conteúdo principal */
 
-.container {
-    max-width: 1920px;
-    /* já foi setado em 1440, fica quase, mas não é ainda */
-    /* min-height: 375px; */
-    margin: 0 auto;
-}
-
 .principal {
     display: flex;
     flex-direction: column;
@@ -70,6 +63,7 @@ header .menu li a:hover {
     font-size: 4rem;
     font-weight: bold;
     margin-top: 50px;
+    max-width:686px;
 
 }
 
@@ -81,10 +75,12 @@ header .menu li a:hover {
     font-size: 19px;
     margin: 40px;
     font-weight: 400;
+    max-width:644px;
+    line-height:30px;
 }
 
 .principal .btn {
-    background-image: linear-gradient(hsl(176, 68%, 64%), aqua);
+    background-image: linear-gradient(to right, aqua, hsl(198, 60%, 50%));
     border-radius: 50px;
     padding: 15px 75px;
     font-size: 15px;
@@ -92,10 +88,11 @@ header .menu li a:hover {
     color: var(--whith);
     margin-top: 25px;
     margin-bottom: 10%;
+    
 }
 
 .principal .btn:hover {
-    background-image: linear-gradient(aqua, hsl(198, 60%, 50%));
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%), aqua);
 }
 
 /*  serviços */
@@ -104,12 +101,18 @@ header .menu li a:hover {
     background-color: var(--main-dark);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 6rem;
+    max-width:900px;
+    margin:0 auto;
 }
 
-.servicos img {
+.servicos .img img {
+    display:flex;
     height: 80px;
+    text-align: center;
     flex-wrap: wrap;
+    margin: auto;
+    
 }
 
 .servicos a {
@@ -165,15 +168,19 @@ header .menu li a:hover {
 .productive .text-right .arrow::after {
     background: url(../image/icon-arrow.svg) no-repeat;
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 16px;
+    height: 16px;
     position: absolute;
     margin-left: 5px;
-
+    color:var(--whith)
 }
 
+/* .productive .text-right .arrow::after:hover {
+    color:var(--whith)
+} */
 .productive .text-right a:hover {
     color: var(--whith);
+    
 }
 
 /*  */
