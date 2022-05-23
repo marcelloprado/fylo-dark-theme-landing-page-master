@@ -1,5 +1,5 @@
 :root {
-    /* intro and email sign up background */
+    
     --primary-dark: hsl(217, 28%, 15%);
 
     --main-dark: hsl(218, 28%, 13%);
@@ -11,6 +11,7 @@
     --shadow: rgb(31, 29, 29);
 
     --btn-primary: hsl(198, 60%, 50%);
+
     --btn-secundary: hsl(176, 68%, 64%);
 
     --whith: hsl(0, 0%, 100%);

@@ -148,33 +148,36 @@ header .menu li a:hover {
 .productive .text-right p {
     margin-bottom: 20px;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 5px;
 }
 
-.productive .text-right a {
-    font-size: 1.2rem;
-    color: var(--btn-primary);
-    margin-left: 10px;
-    text-decoration: underline;
-}
-
-.productive .text-right .arrow {
-    display: flex;
-    position: absolute;
-}
-
 .productive .text-right .arrow a {
-    margin-right: 5px;
+    font-size: 1.6rem;
+    color:var(--btn-secundary);
+    display: flex;
+    align-items:center;
+    margin:20px 0;
+    padding:0 0 5px;
+    border-bottom: 1px solid var(--btn-secundary);
+    max-width:166px;
+}
+.productive .text-right .arrow a::after {
+    content: "";
+    background:url(../image/icon-arrow.svg) center no-repeat;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin:0 0 0 6px;
 }
 
-.productive .text-right .arrow svg .arrow-white:hover {
-    fill:var(--whith);
-}
-
-.productive .text-right a:hover {
+.productive .text-right .arrow a:hover {
     color: var(--whith);
-
+    border-bottom: 1px solid var(--whith);
+}
+.productive .text-right .arrow a:hover::after {
+    background: url(../image/icon-arrow-white.svg) center no-repeat;
+    
 }
 
 .apresenta {
