@@ -45,7 +45,7 @@
                 <img src="src/image/illustration-intro.png">
             </div>
 
-            <h1 class="texto-principal">All your files in one secure location, 
+            <h1 class="texto-principal">All your files in one secure location,
                 accessible anywthere
             </h1>
 
@@ -108,6 +108,27 @@
                     attachments required.</p>
                 <div class="arrow">
                     <a href="#">See how Fylo works</a>
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <circle id="b" cx="6" cy="6" r="6" />
+                            <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+                                <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                                <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                                <feColorMatrix
+                                    values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                                    in="shadowBlurOuter1" />
+                            </filter>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <g transform="translate(2 2)">
+                                <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                                <use fill="#62E0D9" xlink:href="#b" />
+                            </g>
+                            <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                                fill="#1B2330" />
+                        </g>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -173,7 +194,7 @@
     <section class="login" id="siga">
         <h2 class="login-h2">Get early access today</h2>
         <p class="login-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit,ipsum dolor sit amet consectetur
-            adipisicing elit,consectetur adipisicingipsum dolor</p>
+            adipisicing elit,consectetur adipisicingipsum doloradipisicing elit,ipsum dolor sit amet </p>
         <form class="loginForm">
             <input type="email" name="email" title="Plese enter a valid email address" value=""
                 placeholder="johnappleseed#mail.com" class="input-email" required>
@@ -188,7 +209,8 @@
         <div class="rodape-baixo">
             <div class="localiza">
                 <img src="src/image/icon-location.svg">
-                <p>Rua da força, Nº 300
+                <p>Rua da força, Nº 300 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur
+                    numquam ipsam autem suscipit.
                 </p>
             </div>
             <div class="contact">
@@ -198,38 +220,36 @@
 
             </div>
             <div class="menu-rodape">
-                <ol class="left">
-                    <a href="#">
-                        <li>About Us
-                    </a></li>
-                    <a href="#caracteris">
-                        <li>Jobs
-                    </a></li>
-                    <a href="#">
-                        <li>Press
-                    </a></li>
-                    <a href="#">
-                        <li>Blog
-                    </a></li>
-                </ol>
-                <ol class="right">
-                    <a href="#">
-                        <li>Contact Us
-                    </a></li>
-                    <a href="#">
-                        <li>Terms
-                    </a></li>
-                    <a href="#">
-                        <li>Privacy
-                    </a></li>
-                </ol>
+                <ul class="left">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                    <a href="#caracteris">Jobs</a>
+                    </li>
+                    <li>
+                    <a href="#">Press</a>
+                    </li>
+                    <li>
+                    <a href="#">Blog</a>
+                    </li>
+                    </ul>
+                    <ul class="right">
+                        <a href="#">
+                            <li>Contact Us
+                        </a></li>
+                        <a href="#">
+                            <li>Terms
+                        </a></li>
+                        <a href="#">
+                            <li>Privacy
+                        </a></li>
+                    </ul>
             </div>
             <div class="redes">
-                <a href=""><i class="fab fa-facebook"></i></a>
-
-                <a href=""><i class="fab fa-instagram"></i></a>
-
+                <a href=""><i class="fab fa-facebook-f"></i></a>
                 <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
             </div>
         </div>
 

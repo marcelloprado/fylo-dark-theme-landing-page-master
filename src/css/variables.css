@@ -10,8 +10,8 @@
 
     --shadow: rgb(31, 29, 29);
 
-    --btn-primary: hsl(176, 68%, 64%);
-    --btn-hover: hsl(198, 60%, 50%);
+    --btn-primary: hsl(198, 60%, 50%),hsl(176, 68%, 64%);
+    
 
     --whith: hsl(0, 0%, 100%);
 }

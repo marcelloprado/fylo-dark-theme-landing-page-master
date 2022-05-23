@@ -6,8 +6,7 @@ body {
     background-color: var(--main-dark);
     color: var(--whith);
     font-family: 'Outfit', sans-serif;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    margin:0 auto;
 }
 
 header {
@@ -16,7 +15,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 4rem;
-    flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -55,6 +53,7 @@ header .menu li a:hover {
     background: url(../image/bg-curvy-desktop.svg) center bottom no-repeat;
     background-color: var(--primary-dark);
     background-size: contain;
+    
 }
 
 .principal .texto-principal {
@@ -80,7 +79,7 @@ header .menu li a:hover {
 }
 
 .principal .btn {
-    background-image: linear-gradient(to right, aqua, hsl(198, 60%, 50%));
+    background-image: linear-gradient(to right,hsl(198, 60%, 50%),hsl(176, 68%, 64%));
     border-radius: 50px;
     padding: 15px 75px;
     font-size: 15px;
@@ -104,6 +103,7 @@ header .menu li a:hover {
     gap: 6rem;
     max-width:900px;
     margin:0 auto;
+    
 }
 
 .servicos .img img {
@@ -136,17 +136,18 @@ header .menu li a:hover {
 
 .productive {
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     margin-top: 100px;
     column-gap: 50px;
-    flex-wrap: wrap;
-
 }
 
 .productive .text-right h2 {
+    display:flex;
     font-size: 4.5rem;
     margin-bottom: 25px;
+    max-width: 372px;
 }
 
 .productive .text-right p {
@@ -165,19 +166,19 @@ header .menu li a:hover {
 
 }
 
-.productive .text-right .arrow::after {
-    background: url(../image/icon-arrow.svg) no-repeat;
-    content: "";
-    width: 16px;
-    height: 16px;
+.productive .text-right .arrow {
+    display:flex;   
     position: absolute;
-    margin-left: 5px;
-    color:var(--whith)
+}
+.productive .text-right .arrow a {
+    margin-right:5px;
 }
 
-/* .productive .text-right .arrow::after:hover {
+/* .productive .text-right .arrow svg a:hover {
     color:var(--whith)
+    fill:#FFF;
 } */
+
 .productive .text-right a:hover {
     color: var(--whith);
     
@@ -263,6 +264,8 @@ header .menu li a:hover {
 .login-p {
     font-size: 12px;
     padding: 20px;
+    max-width:80%;
+    margin:0 auto;
 }
 
 .input-email {
@@ -274,14 +277,15 @@ header .menu li a:hover {
 
 .login-btn {
     border-radius: 25px;
-    padding: 10px;
-    background-color: var(--btn-primary);
+    height: 40px;
+    padding:0 30px;
+    background-image:linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
     color: var(--whith);
     margin: 20px;
 }
 
 .login-btn:hover {
-    background-color: var(--btn-hover);
+    background-image: linear-gradient(to right,hsl(176, 68%, 64%), aqua);
 }
 
 
@@ -295,23 +299,27 @@ header .menu li a:hover {
 }
 
 .rodape .logo {
-    padding-top: 150px;
+    padding-top: 130px;
+    margin-left:20px;
+    margin-bottom:30px;
 
 }
 
 .rodape-baixo {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
 .rodape .localiza {
     display: flex;
-
+    max-width:30%;
 }
 
 .rodape .localiza img {
     margin-right: 10px;
+    width:15px;
+    height:15px;
 
 }
 
@@ -328,13 +336,12 @@ header .menu li a:hover {
 .menu-rodape {
     display: flex;
     column-gap: 50px;
-    text-align: center;
     justify-content: center;
 }
 
 .left li,
 .right li {
-    margin: 20px;
+    margin:0 20px 20px;
 }
 
 .menu-rodape li:hover {
@@ -342,8 +349,12 @@ header .menu li a:hover {
 }
 
 .redes a {
-    margin: 20px;
-    font-size: 30px;
+    margin: 10px;
+    font-size: 18px;
+    padding:8px;
+    border: 1px solid #FFF;
+    border-radius:60%;
+    text-align: center;
 }
 
 .redes a:hover {
