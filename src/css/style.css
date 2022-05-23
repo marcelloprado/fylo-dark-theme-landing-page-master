@@ -6,7 +6,7 @@ body {
     background-color: var(--main-dark);
     color: var(--whith);
     font-family: 'Outfit', sans-serif;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 header {
@@ -26,7 +26,6 @@ header .logo {
 header .menu {
     display: flex;
     align-items: center;
-
 }
 
 header .menu li {
@@ -53,7 +52,6 @@ header .menu li a:hover {
     background: url(../image/bg-curvy-desktop.svg) center bottom no-repeat;
     background-color: var(--primary-dark);
     background-size: contain;
-    
 }
 
 .principal .texto-principal {
@@ -62,8 +60,7 @@ header .menu li a:hover {
     font-size: 4rem;
     font-weight: bold;
     margin-top: 50px;
-    max-width:686px;
-
+    max-width: 686px;
 }
 
 .principal .texto-secundario {
@@ -74,12 +71,12 @@ header .menu li a:hover {
     font-size: 19px;
     margin: 40px;
     font-weight: 400;
-    max-width:644px;
-    line-height:30px;
+    max-width: 644px;
+    line-height: 30px;
 }
 
 .principal .btn {
-    background-image: linear-gradient(to right,hsl(198, 60%, 50%),hsl(176, 68%, 64%));
+    background-image: linear-gradient(to right, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
     border-radius: 50px;
     padding: 15px 75px;
     font-size: 15px;
@@ -87,11 +84,10 @@ header .menu li a:hover {
     color: var(--whith);
     margin-top: 25px;
     margin-bottom: 10%;
-    
 }
 
 .principal .btn:hover {
-    background-image: linear-gradient(to right,hsl(176, 68%, 64%), aqua);
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), aqua);
 }
 
 /*  serviços */
@@ -101,18 +97,16 @@ header .menu li a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem;
-    max-width:900px;
-    margin:0 auto;
-    
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .servicos .img img {
-    display:flex;
+    display: flex;
     height: 80px;
     text-align: center;
     flex-wrap: wrap;
     margin: auto;
-    
 }
 
 .servicos a {
@@ -136,15 +130,16 @@ header .menu li a:hover {
 
 .productive {
     display: flex;
-    flex-wrap:wrap;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-around;
     margin-top: 100px;
-    column-gap: 50px;
+    
 }
-
+.productive .img-left {
+    margin-left:80px;
+}
 .productive .text-right h2 {
-    display:flex;
+    display: flex;
     font-size: 4.5rem;
     margin-bottom: 25px;
     max-width: 372px;
@@ -162,34 +157,30 @@ header .menu li a:hover {
     color: var(--btn-primary);
     margin-left: 10px;
     text-decoration: underline;
-    justify-items: center;
-
 }
 
 .productive .text-right .arrow {
-    display:flex;   
+    display: flex;
     position: absolute;
 }
+
 .productive .text-right .arrow a {
-    margin-right:5px;
+    margin-right: 5px;
 }
 
-/* .productive .text-right .arrow svg a:hover {
-    color:var(--whith)
-    fill:#FFF;
-} */
+.productive .text-right .arrow svg .arrow-white:hover {
+    fill:var(--whith);
+}
 
 .productive .text-right a:hover {
     color: var(--whith);
-    
+
 }
 
-/*  */
 .apresenta {
     display: flex;
     justify-content: center;
     margin-top: 10rem;
-
 }
 
 .aspas {
@@ -220,14 +211,12 @@ header .menu li a:hover {
 .box-fundador p {
     font-size: 1.4rem;
     padding: 2rem;
-
 }
 
 .box-fundador .img-fundador {
     margin-left: 20px;
     display: flex;
     float: left;
-
 }
 
 .box-fundador .img-fundador img {
@@ -264,8 +253,8 @@ header .menu li a:hover {
 .login-p {
     font-size: 12px;
     padding: 20px;
-    max-width:80%;
-    margin:0 auto;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .input-email {
@@ -278,14 +267,14 @@ header .menu li a:hover {
 .login-btn {
     border-radius: 25px;
     height: 40px;
-    padding:0 30px;
-    background-image:linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    padding: 0 30px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     color: var(--whith);
     margin: 20px;
 }
 
 .login-btn:hover {
-    background-image: linear-gradient(to right,hsl(176, 68%, 64%), aqua);
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), aqua);
 }
 
 
@@ -295,14 +284,12 @@ header .menu li a:hover {
     background-color: var(--footer-dark);
     font-size: 15px;
     padding: 30px 50px;
-
 }
 
 .rodape .logo {
     padding-top: 130px;
-    margin-left:20px;
-    margin-bottom:30px;
-
+    margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 .rodape-baixo {
@@ -313,14 +300,13 @@ header .menu li a:hover {
 
 .rodape .localiza {
     display: flex;
-    max-width:30%;
+    max-width: 30%;
 }
 
 .rodape .localiza img {
     margin-right: 10px;
-    width:15px;
-    height:15px;
-
+    width: 15px;
+    height: 15px;
 }
 
 .rodape .contact {
@@ -341,7 +327,7 @@ header .menu li a:hover {
 
 .left li,
 .right li {
-    margin:0 20px 20px;
+    margin: 0 20px 20px;
 }
 
 .menu-rodape li:hover {
@@ -351,12 +337,7 @@ header .menu li a:hover {
 .redes a {
     margin: 10px;
     font-size: 18px;
-    padding:8px;
+    padding: 8px;
     border: 1px solid #FFF;
-    border-radius:60%;
-    text-align: center;
-}
-
-.redes a:hover {
-    color: var(--btn-hover);
+    border-radius: 60%;
 }
