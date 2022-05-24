@@ -344,3 +344,11 @@ header .menu li a:hover {
     border: 1px solid #FFF;
     border-radius: 60%;
 }
+
+.rodape .copyright {
+    color:#CCC;
+    font-size:13px;
+    text-align:center;
+    margin-top:35px;
+    opacity: 0.4;
+}
