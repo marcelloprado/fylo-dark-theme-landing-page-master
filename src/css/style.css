@@ -53,7 +53,6 @@ header .menu li a:hover {
     background-color: var(--primary-dark);
     background-size: contain;
 }
-
 .principal .texto-principal {
     display: flex;
     text-align: center;
@@ -62,7 +61,6 @@ header .menu li a:hover {
     margin-top: 50px;
     max-width: 686px;
 }
-
 .principal .texto-secundario {
     display: flex;
     text-align: center;
@@ -74,7 +72,6 @@ header .menu li a:hover {
     max-width: 644px;
     line-height: 30px;
 }
-
 .principal .btn {
     background-image: linear-gradient(to right, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
     border-radius: 50px;
@@ -85,7 +82,6 @@ header .menu li a:hover {
     margin-top: 25px;
     margin-bottom: 10%;
 }
-
 .principal .btn:hover {
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), aqua);
 }
@@ -316,10 +312,15 @@ header .menu li a:hover {
     display: flex;
     flex-direction: column;
 }
+.rodape .contact .contact-phone,
+.rodape .contact-email {
+    display: flex;
+    
+}
 
 .rodape .contact .contact-phone img,
 .contact-email img {
-    margin-right: 20px;
+        margin-right:20px;
 }
 
 .menu-rodape {

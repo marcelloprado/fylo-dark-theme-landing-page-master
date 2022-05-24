@@ -1,50 +1,65 @@
+
 @media(max-width:688px) {
+
     .productive {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .principal .imagen-pricipal img,
     .productive .img-left img {
         max-width: 400px;
         max-height: 400px;
     }
+
     .productive .text-right h2 {
-        display:flex;
-        font-size: 2rem;
-        margin-top:5rem;
-        margin-left:100px;
-    }
-    .productive .text-right p     {
-         text-align: start;
-         margin-left: 30px;
-     }
-
-    
-
-    .productive .text-right .arrow {
-        margin-left:35px;
-    }
-
-    .productive {
         display: flex;
-        flex-wrap: wrap;
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-left: 100px;
+    }
+
+    .productive .text-right p {
+        text-align: start;
+        margin-left: 30px;
     }
 
     .productive .text-right .arrow {
-        margin-left:35px;
+        margin-left: 35px;
     }
 
+    .rodape-baixo .contact,
+    .rodape-baixo .contact img {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .rodape-baixo .menu-rodape {
+        gap: 0;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes a {
+        display: flex;
+        margin-top: 0;
+    }
 }
+
 
 @media(max-width:414px) {
 
     header {
-        padding:2rem;
+        padding: 2rem;
     }
 
     header .logo {
         display: flex;
         flex-direction: row;
-        height:3rem;
+        height: 3rem;
     }
 
     header .menu li {
@@ -64,20 +79,21 @@
     .principal .imagen-pricipal img {
         width: 300px;
         height: 300px;
-        
+
     }
 
     .principal .texto-principal {
         font-size: 30px;
         /* font-weight:400; */
     }
+
     .principal .texto-secundario {
-        font-weight:400;
-        font-size:15px;
+        font-weight: 400;
+        font-size: 15px;
     }
 
     .principal .btn {
-        margin:10px 0 150px 0;
+        margin: 10px 0 150px 0;
     }
 
     .apresenta {
@@ -95,24 +111,27 @@
         display: flex;
         flex-wrap: wrap;
     }
+
     .productive .text-right h2 {
-        display:flex;
+        display: flex;
         justify-content: center;
         font-size: 2rem;
         text-align: center;
-        margin:30px;
+        margin: 30px;
     }
-    .productive .text-right p     {
-         text-align: start;
-         margin-left: 30px;
-     }
+
+    .productive .text-right p {
+        text-align: start;
+        margin-left: 30px;
+    }
 
     .productive .img-left img {
         max-width: 300px;
         max-height: 300px;
     }
+
     .productive .text-right .arrow {
-        margin-left:35px;
+        margin-left: 35px;
     }
 
     .fundador {
@@ -121,8 +140,6 @@
         margin-left: 30px;
 
     }
-
-
 
     .aspas {
         position: relative;
@@ -167,7 +184,7 @@
     .rodape-baixo {
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .localiza,
@@ -201,149 +218,9 @@
 
     .redes {
         margin-bottom: 40px;
-        display:flex;
-        
+        display: flex;
+        flex-direction: row;
         align-self: center;
-
     }
 }
 
-
-
-/* @media (max-width:375px) {
-
-    header .logo {
-        display: flex;
-        flex-direction: row;
-        height: 2rem;
-    }
-
-    header .menu li {
-        padding: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .principal {
-        background: url(../image/bg-curvy-desktop.svg) center bottom no-repeat;
-    }
-
-    .principal .imagen-pricipal img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .principal .texto-principal {
-        font-size: 30px;
-    }
-
-    .principal .btn {
-        margin-bottom: 150px;
-    }
-
-    .apresenta {
-        display: block;
-        margin: 10px;
-    }
-
-    .servicos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .productive .img-left img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .fundador {
-        flex-direction: column;
-        padding: 0;
-        margin-left: 30px;
-
-    }
-
-    .productive .text-right h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .productive .text-right p,
-    .productive .text-right a {
-        text-align: start;
-        margin-left: 30px;
-    }
-
-    .aspas {
-        position: relative;
-        bottom: -23px;
-        left: 40px;
-        z-index: -1;
-        padding-top: 100px;
-    }
-
-    .box-fundador {
-        width: 300px;
-    }
-
-    .login {
-        width: 340px;
-    }
-
-    .login-h2 {
-        font-size: 18px;
-    }
-
-    .input-email,
-    .login-btn {
-        width: 250px;
-    }
-
-    .rodape {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .rodape .logo {
-        display: flex;
-        align-items: flex-start;
-        margin: 30px 50px 30px;
-    }
-
-    .rodape-baixo {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .localiza,
-    .rodape .contact {
-        padding-top: 30px;
-        margin-left: -100px;
-    }
-
-    .contact-email {
-        display: flex;
-        align-items: center;
-    }
-
-    .contact-email img {
-        margin: 0;
-        padding: 10px;
-    }
-
-    .menu-rodape {
-        flex-direction: column;
-        text-align: left;
-        align-items: flex-start;
-        width: 300px;
-        margin-top: 60px;
-    }
-
-    .menu-rodape .right {
-        margin: 30px 0 50px;
-    }
-
-    .redes {
-        margin-bottom: 50px;
-    }
-} */
